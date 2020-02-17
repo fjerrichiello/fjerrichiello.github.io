@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frank Errichiello</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <header>
+        <div class = "menu-toggler">
+            <div class = "bar half start"></div>
+            <div class = "bar"></div>
+            <div class = "bar half end"></div>
+        </div>
+        <nav class = "top-nav">
+            <ul class = "nav-list">
+                <li>
+                    <a href="index.html" class = "nav-link">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html" class = "nav-link">About</a>
+                </li>
+                <li>
+                    <a href="projects.html" class = "nav-link">Projects</a>
+                </li>
+                <li>
+                    <a href="skills.html" class = "nav-link">Technical Work</a>
+                </li>
+                <li>
+                    <a href="contact.html" class = "nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class= "portfolio" id = "portfolio">
+        <div class= "container">
+            <div class="section-heading">
+                <h1>Projects</h1>
+                <h6>View some of my recent work here</h6>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
+                    <img src = "images/code1.jpg" alt="">
+                </div>
+                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
+                    <h6>Algorithms</h6>
+                <h1>Fun with Subset Sum  <a  href="https://github.com/fjerrichiello/FunWithSubsetSum" target="_blank" class=" icon-link">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                </h1>
+                    <p>Write a program solving the subset sum problem using dynamic programming in C++</p>
+                    <p>- Return the number of distinct subsets that yield a sum of T</p>
+                    <p>- Return the size of the smallest subset yield T</p>
+                    <p>- Return the number of distinct subsets yielding sum T and having the minimum size</p>
+                    <p>- Report the lexicographically first minimum-size subset which yields the sum of T</p>
+                      
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="portfolio-description has-margin-left" data-aos="fade-right" data-aos-delay="900">
+                    <h6>Programming Language Design and Implementation</h6>
+                    <h1>CTA-Web-app <a  href="https://github.com/fjerrichiello/CTA-Web-app" target="_blank" class=" icon-link">
+                        <i class="fab fa-github-square"></i>
+                    </a></h1>
+                    <p>A C# web app using ASP.NET and ADO.NET that retrieves info about CTA L stations and stops</p>
+                    <p>- On input of a station name return the number of stops, riding time, and handicap accessibility</p>
+                    <p>- On input of a line color return all stops along the line, and number of stops</p>
+                    <p>- Show a list of the top ten stations based on the number of riders</p>
+                    <p>- Show a graph of ridership time per every month</p>
+                    <p>- Show a graph of ridership time per every day of the week</p>
+                    
+                </div>
+                <div class="portfolio-img" data-aos="fade-left" data-aos-delay="1200">
+                    <img src = "images/code2.jpg" alt="">
+                </div>
+               
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="1500">
+                    <img src = "images/code3.png" alt="">
+                </div>
+                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="1800">
+                    <h6>Personal</h6>
+                    <h1>Web-Based sports app</h1>
+                    <p>- A project using a MEAN stack</p>
+                    <p>- User authentication</p>
+                    <p>- Used mondoDB to store data about certain sports</p>
+                    <p>- Allows user to pick any sport and store their statistics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <footer class = "copyright">
+        <div class="up" id = "up">
+            <i class = "fas fa-chevron-up"></i>  
+        </div>
+        <p>&copy; 2020 Frank Errichiello</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js">
+        AOS.init();
+    </script>
+</body>
+</html>
+
