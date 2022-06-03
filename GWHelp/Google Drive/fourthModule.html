@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+
+  <meta name="author" content="">
+  <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+  <link rel="stylesheet" href="/css/module.css">
+  <script src="https://kit.fontawesome.com/d9f17fec2b.js" crossorigin="anonymous"></script>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+
+  <!-- Bootstrap core CSS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+  <script src="/js/temp.js"></script>
+
+  <script src="https://kit.fontawesome.com/d9f17fec2b.js" crossorigin="anonymous"></script>
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+  <script>
+    let count = 0;
+
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      let obj = document.getElementById(data);
+      obj.remove()
+      count += 1;
+      console.log(count);
+      alert('Item has been moved to folder GenED Courses');
+      if (count === 2) {
+        showStepTwo(true);
+      }
+    }
+  </script>
+
+</head>
+
+
+<header class="blog-header py-3 p-0" style="background-color: #4667af;">
+  <div class="row flex-nowrap justify-content-between align-items-center m-0">
+
+    <div class="col-4 pt-1">
+      <a href="/index.html"> <i class="fa fa-home" style="font-size:30px; color: #fcbc03;"></i> </a>
+    </div>
+    <div class="col-4 text-center">
+      <a class="blog-header-logo text-dark" href="#"><img src="/images/logo3.svg" alt="HTML tutorial" style="max-height: 100px; max-width: 120px;"></a>
+    </div>
+    <div class="col-4 d-flex justify-content-end align-items-center pr-1">
+    </div>
+  </div>
+</header>
+
+
+<body style="background-color: #E1E2E1;">
+
+  <div class="container">
+
+
+    <h1 class="darkBlueText" style="margin-top: 30px;"> <span> DRIVE - </span>Tutorial 4: Moving items</h1>
+    <p style="margin-bottom: 5px;font-size: 20px;"> You can move an item from anywhere in Google Drive: the main window, the left panel, or search results. Here you will learn about moving files between folders.</p>
+
+    <h4 class="darkBlueText" style="margin-top: 20px;"> Drag to a folder </h4>
+    <p style="margin-bottom: 5px;font-size: 20px;"> With drag and drop it has never been easier to move files in your Drive. </p>
+
+
+
+
+    <div class="col-12 text-center pt-1 p-0" style="justify-content: center;">
+      <a class="btn btn-light shadow-none mb-1" id="Button" href="javascript:onCollapseMenu()" style="width: 100%;">
+        <span id="VideoText"> Hide video</span>
+        <i id="IconUpDown" class="fas fa-chevron-up "></i>
+      </a> </div>
+    <div class="row pt-1" id="video-div">
+
+      <div class="col-12 pt-1 p-0 pb-2">
+        <div class="embed-responsive embed-responsive-21by9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/mO3O3-wCfNg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        </div>
+        </div>
+      </div>
+
+    <h2 class="darkBlueText" style="margin-bottom: 10px; text-align: center; background-color: #fcbc03; padding: 10px;" data-toggle="tooltip" data-placement="top" title="There are two steps required to complete this tutorial">Steps (2)</h2>
+    <h5 class = "darkBlueText" style="margin-bottom: 30px; text-align: center; padding: 10px; color: #fcbc03;"> Complete a step correctly for the next one to appear. After completing all the steps you will be prompted to move on. </h5>
+
+    <div class="row pr-2 pl-2" style="text-align: center; ">
+      <div class="col-6 pt-2 pb-2" style=" padding: 10%; ">
+        <h2 class="text-muted" href="#">1.</h2>
+        <p style="text-align: left;">
+          Click and hold the item you want to move and then move the item over the folder and release it. For this example move both documents into
+          <span style="font-weight: bold;"> GenED Courses </span> folder.
+        </p>
+      </div>
+      <div class="col-6 pt-1 pb-1 pl-0 pr-0">
+        <div class="card w-100 text-left" id="oldDragDiv">
+          <ul class="list-group list-group-flush">
+            <div id="dropDiv" ondrop="drop(event)" ondragover="allowDrop(event)" class="p-3" style="display: grid;">
+              <a class="w-100" id="GenEDFolder" ondrop="return false;" href="#/" style="color: #5f6368;"><i class="fas fa-folder-plus"></i>GenED Courses</a>
+            </div>
+            <hr class="m-0">
+            <a class="w-100 p-3" id="CS422Doc" draggable="true" ondragstart="drag(event)" href="#/" style="color: #5f6368;"><i class="fas fa-file-alt" style="color: rgb(17, 85, 204) !important;"></i>CS 422 Problem Statement</a>
+            <hr class="m-0">
+            <a class="w-100 p-3" id="CS474Doc" draggable="true" ondragstart="drag(event)" href="#/" style="color: #5f6368;"><i class="fas fa-file-alt" style="color: rgb(17, 85, 204) !important;"></i>CS 474 Project Proposal</a>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row pr-2 pl-2 collapse" style="text-align: center; visibility: hidden;" id="stepTwo">
+      <div class="col-6 pt-1" style = "padding: 10%">
+        <h2 class="text-muted" href="#">2.</h2>
+        <p style="text-align: left;">
+
+          Now that you have moved your files,
+          <span style="font-weight: bold;"> double click </span> to view your files inside the folder.
+        </p>
+      </div>
+      <div class="col-6 pt-1 pb-1 pl-0 pr-0">
+        <div class="card w-100 text-left">
+          <ul class="list-group list-group-flush" id="list">
+            <div id="stepInDiv" ondblclick="updateView()" class="p-3 " style="display: grid;">
+              <a class="w-100" id="GenEDFolder" ondblclick="updateView()" href="#/" style="color: #5f6368;"><i class="fas fa-folder-plus"></i>GenED Courses</a>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br/>
+
+    <div class="row pr-2 pl-2 collapse" style="text-align: center; background: #d9d9d9;" id="stepThree">
+      <div class="col-12 pt-2 pb-1" style=" padding: 10%; ">
+        <h2 style="color: #4667af;" href="#">Good job!</h2>
+        <!--Only show this text if the user was successful in creating the folder, and then tell them to move on the next step.-->
+        <p>You moved items into a folder, and have reached the end of this module.</p>
+      </div>
+      <div class="col-6 pt-1">
+        <a class="text-muted" href="#"></a>
+      </div>
+    </div>
+
+    <br />
+    <div class="row pr-2 pl-2" style="text-align: center; height: 10vh;">
+      <div class="col-6 pt-1">
+        <a type="button" class="btn btn-back1 w-100 h-100" style="font-size: 25px;" href="thirdModule.html">Previous tutorial
+          <br /> <span style="font-size: 18px; color: #E1E2E1;"> (Sharing your items) </span>
+        </a>
+      </div>
+
+      <div class="col-6 pt-1">
+      <a type="button" class="btn btn-success w-100 h-100" style="font-size: 25px;" href="/index.html"> Jump to home
+          <br/> <span style="font-size: 18px; color: #E1E2E1;"> (End of module) </span>
+
+        </a>
+
+      </div>
+    </div>
+    <div class="row pr-2 pl-2" style="text-align: center; height: 10vh;">
+
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+  </script>
+  <script src="../../assets/js/vendor/popper.min.js"></script>
+  <script src="../../dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
